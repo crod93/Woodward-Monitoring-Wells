@@ -1,0 +1,106 @@
+{% extends "base.html"%} {% block content %}
+<div>
+    <h3>Sample ID: {{ well.id }}</h3>
+    <p>
+        <strong>Well Location:</strong>
+        <span id="well-location">{{ well.location|capfirst }}</span>
+    </p>
+    <p>
+        <strong>Well Name:</strong>
+        <span id="well-name">{{ well.wellName|capfirst }}</span>
+    </p>
+    <p>
+        <strong>Distance to Well (ft bTOC):</strong>
+        <span id="well-distance">{{ well.distanceToWell }}</span>
+    </p>
+    <p>
+        <strong>Groundwater Elevation (ft amsl):</strong>
+        <span id="elevation">{{ well.groundWaterElev }}</span>
+    </p>
+    <p>
+        <strong>Coliform Amount (MPN/100 ml):</strong>
+        <span id="coliform">{{ well.coliform }}</span>
+    </p>
+    <p>
+        <strong>EColi Present:</strong>
+        <span id="eColi">{{ well.eColiPresent }}</span>
+    </p>
+    <p>
+        <strong>Nitrate Amount (mg/l):</strong>
+        <span id="nitrate">{{ well.nitrate }}</span>
+    </p>
+    <p>
+        <strong>B. Alkalinity Amount (mg/l):</strong>
+        <span id="bAlka">{{ well.bAlkalinity }}</span>
+    </p>
+    <p>
+        <strong>Field PH Level:</strong>
+        <span id="ph">{{ well.fieldPH }}</span>
+    </p>
+    <p>
+        <strong>Electric Charge (µS/cm):</strong>
+        <span id="electric-charge">{{ well.electricCharge }}</span>
+    </p>
+    <p>
+        <strong>Total Dissolved Solids:</strong>
+        <span id="total-DS">{{ well.totalDissolvedSoilds }}</span>
+    </p>
+    <p>
+        <strong>Sulfate Amount:</strong>
+        <span id="sulfate-amount">{{ well.sulfate }}</span>
+    </p>
+    <p>
+        <strong>Chloride Amount:</strong>
+        <span id="chloride-amount">{{ well.chloride }}</span>
+    </p>
+    <p>
+        <strong>Calcium Amount:</strong>
+        <span id="calcium-amount">{{ well.calcium }}</span>
+    </p>
+    <p>
+        <strong>Sodium Amount:</strong>
+        <span id="sodium-amount">{{ well.sodium }}</span>
+    </p>
+    <p>
+        <strong>Potassium Amount:</strong>
+        <span id="potassium-amount">{{ well.potassium }}</span>
+    </p>
+    <p>
+        <strong>Iron Amount:</strong>
+        <span id="iron-amount">{{ well.iron }}</span>
+    </p>
+    <p>
+        <strong>Magnesium Amount:</strong>
+        <span id="magnesium-amount">{{ well.magnesium }}</span>
+    </p>
+    <p>
+        <strong>Barium Amount:</strong>
+        <span id="barium-amount">{{ well.barium }}</span>
+    </p>
+    <p>
+        <strong>Bicarbonate Amount:</strong>
+        <span id="bicarbonate-amount">{{ well.bicarbonate }}</span>
+    </p>
+    <p>
+        <strong>Carbonate Amount:</strong>
+        <span id="carbonate-amount">{{ well.carbonate }}</span>
+    </p>
+    <p>
+        <strong>Fluoride Amount:</strong>
+        <span id="fluoride-amount">{{ well.fluoride }}</span>
+    </p>
+    <p>
+        <strong>Total Hardness:</strong>
+        <span id="total-hardness">{{ well.totalHardness }}</span>
+    </p>
+    <p>
+        <strong>Date Taken:</strong>
+        <span id="dt-taken">{{ well.dtTaken | date:"M d Y"}}</span>
+    </p>
+
+    <hr/>
+    <div id="pie-div">
+
+    </div>
+</div>
+{% endblock %}

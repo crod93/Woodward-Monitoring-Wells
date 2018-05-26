@@ -1,0 +1,25 @@
+{% extends "base.html"%} {% block content %}
+<span>Sort By:</span>
+<select id="well-select">
+    <option value="All">All</option>
+    <option value="MW-1">MW-1</option>
+    <option value="MW-2">MW-2</option>
+    <option value="MW-3">MW-3</option>
+</select>
+<br />
+<br />
+<div id="well-display">
+    {% for well in wells %}
+    <div>
+        <a href="{% url 'well_detail' well.id %}">
+            <h3>Sample ID: {{ well.id}}</h3>
+        </a>
+        <p>Location: {{ well.location }}</p>
+        <p>Well Name: {{ well.wellName }}</p>
+        <p>Total Hardness (mg/l): {{ well.totalHardness }}</p>
+        <p>Date Taken: {{ well.dtTaken }}</p>
+
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

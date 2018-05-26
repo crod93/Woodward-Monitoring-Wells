@@ -1,0 +1,58 @@
+{% load static %}
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Monitoring Wells Web App</title>
+    <link rel="stylesheet" id="ample-style-css" href="{% static 'style.css' %}" type="text/css" media="all">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified plotly.js JavaScript -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body class="wide">
+    <div id="page" class="hfeed site">
+        <header>
+            <div class="header">
+                <div class="main-head-wrap inner-wrap clearfix">
+                    <div id="header-logo-image">
+                        <a href="/">
+                            <img src="{% static 'images/logo_1.png' %}">
+                        </a>
+                    </div>
+                    <div id="header-text" class="">
+                        <h1 id="site-title">
+                            <a href="/" rel="home">Woodward Monitoring Wells</a>
+                        </h1>
+                    </div>
+                    <div class="main-navigation">
+
+                        <a class="nav-links" href="/wells/well_data">Well Database</a>
+
+                        <a class="nav-links" href="/">About</a>
+
+                    </div>
+                </div>
+                <img src="{% static 'images/slide2.jpg' %}">
+            </div>
+
+        </header>
+        <div class="main-wrapper">
+            <div class="single-page clearfix">
+                <div class="inner-wrap">
+                    <div>
+                        {% block content %} {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="colophon">
+            <div class="inner-wrap">
+                This database is created for testing purposes
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="{% static 'js/script.js' %}"></script>
+
+</html>

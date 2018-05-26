@@ -1,0 +1,33 @@
+ {% extends "base.html"%} {% block content %} {% load static %}
+
+<div>
+    <h3>Background</h3>
+    <p>Dr. Horacio Ferriz has been acquiring data from four wells in Woodward Regional Park every three months since 2016 to
+        measure possible contamination of groundwater from the campsite wastewater. Two wells check the composition of incoming
+        groundwater and two wells sample for groundwater on the other side of the evaporation pond. We will develop a program
+        to preprocess the data to compare the chemical analyses of both inbound and outbound groundwater.</p>
+    <hr>
+    <h3>Water Wells</h3>
+    <p>This map shows the system of wells and ponds used to monitor and deal with waste water from the woodward reservoir recreation
+        area. The blue line shows the direction of groundwater flow, which follows elevation gradient from high to low making
+        it a gravity dependent flow. Wells are placed in a way that we can measure the total dissolved solids in the ground
+        water before and after it passes under the evaporation pond which is the last step of wastewater sanitation for this
+        site. Total Dissolved Solids we are concerned about are compounds like nitrates, carbonates, sulfates, and bicarbonates
+        as well as elements like iron, potassium, calcium, magnesium, and sodium.
+    </p>
+    <img src="{% static 'images/wellImages.jpg' %}">
+    <hr>
+    <h3>Evaporation Pond</h3>
+    <p>Here we have a model of water penetrating through sediment layers and what a typical aquifer looks like. We have a shale
+        layer that acts as an impermeable layer for the water, so the water cannot go deeper than that layer. This model
+        shows how runoff water from a precipitation event as well as the natural flow of the groundwater towards a nearby
+        river which is why it is important to keep possible contamination monitored. There is a sampling well before the
+        flow reaches the evaporation pond, and a few wells after the evaporation pond, samples taken at all these wells will
+        show whether or not there is a change of concentration of chemical species dissolved in the water. It will basically
+        show if the groundwater is picking up anything when as it passes underneath the evaporation pond that we would not
+        want for environmental purposes.
+    </p>
+    <img src="{% static 'images/evapPond.jpg' %}">
+    <hr>
+</div>
+{% endblock %}
