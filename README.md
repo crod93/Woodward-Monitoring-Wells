@@ -1,6 +1,8 @@
 # Woodward-Monitoring-Wells
 
 Stanislaus County Geologist have been acquiring data from four wells in Woodward Regional Park every three months since 2016 to measure possible contamination of groundwater from the campsite wastewater. Two wells check the composition of incoming groundwater and two wells sample for groundwater on the other side of the evaporation pond. We will develop a program to preprocess the data to compare the chemical analyses of both inbound and outbound groundwater.
+https://www.dropbox.com/s/4x0v0f63xg9nuj9/Screen%20Shot%202018-05-27%20at%2011.07.59%20AM.png?dl=0
+https://www.dropbox.com/s/4x0v0f63xg9nuj9/Screen%20Shot%202018-05-27%20at%2011.07.59%20AM.png?dl=0
 
 
 ## Getting Started
